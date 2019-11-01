@@ -1,0 +1,47 @@
+					README
+
+	Meniul contine 4 optiuni. Primele 3 optiuni sunt cele solicitate in 
+enuntul temei, iar a patra este o optiune pe care am implementat-o suplimentar, 
+numita Insctructions si care contine instructiuni utile pentru jucator. 
+Navigarea in meniu se face cu ajutorul sagetilor, optiunea curenta este marcata 
+prin evidentierea acesteia (highlight), iar selectarea unei optiuni este 
+posibila doar prin apasarea tastei ENTER. Se poate selecta optiunea 
+Instructions ori de cate ori este nevoie. 
+	Optiunea Resume nu poate fi selectata inainte de inceperea jocului. Ea 
+devine disponibila doar atunci cand jucatorul revine la meniul principal in
+timpul jocului, prin apasarea tastei Q. 
+	De asemenea, chiar daca este in mijlocul unui joc, jucatorul poate 
+reveni oricand la meniul principal prin apasarea tastei Q si, atunci cand va 
+selecta optiunea New Game, va incepe un nou joc, fara a se tine cont de 
+punctajul obtinut pana in momentul respectiv(totul se ia de la 0). 
+	Selectarea optiunii New Game presupune inceperea unei runde noi prin 
+crearea ferestrei corespunzatoare. Trecerea de la o intrebare la alta se face 
+dupa selectarea raspunsului, prin apasarea tastei ENTER. M-am jucat cu paleta 
+de culori oferita de ncurses si cu atributele si am implementat cateva optiuni 
+legate de alegerea unui raspuns. La selectarea unui raspuns corect, acesta 
+va fi marcat prin colorarea acestuia in verde. La selectarea unui raspuns 
+gresit, el va fi marcat prin colorarea in rosu, iar raspunsul corect va fi 
+evidentiat prin colorarea in verde, in timp ce palpaie intermitent.
+	Jucatorul poate selecta una din cele doua optiuni ajutatoare. Fiecare 
+optiune poate fi aleasa o singura data in timpul jocului. Initial, optiunile 
+ajutatoare de pe ecran au culoarea verde. La alegerea uneia dintre optiuni, 
+ea devine rosie si inaccesibila pentru a mai fi folosita a doua oara in timpul
+jocului. Daca se selecteaza optiunea Skip (tasta S) se sare peste intrebarea 
+curenta. Daca optiunea 50/50 este inca disponibila dupa ce se sare peste 
+intrebarea curenta (nu a fost selectata anterior), ea poate fi folosita 
+inclusiv pentru intrebarea de rezerva. Daca se foloseste optiunea 
+50/50 (tasta F), dispar de pe ecran doua optiuni gresite. Daca optiunea Skip 
+nu a fost folosita pana in acel moment si jucatorul nu stie ce sa aleaga 
+dintre cele doua raspunsuri care au ramas pe ecran, el poate folosi optiunea 
+Skip pentru a sari peste intrebare.
+	Am luat in calcul faptul ca jucatorul poate selecta raspunsul corect 
+prin apasarea tastelor specifice chiar si atunci cand are CapsLock-ul activat 
+(se intampla uneori chiar si fara sa-ti dai seama).
+	La finalul jocului, apare pe ecran punctajul, numarul de raspunsuri 
+corecte si numarul de raspunsuri gresite, alaturi de un mesaj prin care 
+jucatorul este felicitat. Jucatorul poate reveni la meniul principal prin 
+apasarea tastei ENTER, de unde poate alege sa inceapa un nou joc, sa 
+vizualizeze instructiunile sau sa paraseasca jocul prin selectarea optiunii 
+Quit.
+	Jucatorul poate parasi oricand jocul prin revenirea la meniul principal 
+si selectarea optiunii Quit.
